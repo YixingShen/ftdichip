@@ -25,3 +25,5 @@ include_directories(${FTDI_INC})
 add_library(MPSSE SHARED ${SOURCES})
 target_link_libraries(MPSSE)
 
+add_library(MPSSEStatic STATIC ${SOURCES})
+target_link_libraries(MPSSEStatic)

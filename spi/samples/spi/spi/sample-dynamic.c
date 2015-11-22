@@ -42,9 +42,9 @@
 #include<windows.h>
 #endif
 
-#ifdef __linux
+//#ifdef __linux
 #include<dlfcn.h>
-#endif
+//#endif
 
 /* Include D2XX header*/
 #include "ftd2xx.h"
