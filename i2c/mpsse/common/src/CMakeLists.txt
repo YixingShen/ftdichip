@@ -6,4 +6,5 @@ include_directories(${MIDDLELAYER_DIR})
 include_directories(${FTDI_INC})
 
 include_directories(../inc)
-add_library (common ftdi_common.c)
+add_library (common SHARED ftdi_common.c)
+target_link_libraries(common)

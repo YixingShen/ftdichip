@@ -5,5 +5,5 @@ include_directories(${MIDDLELAYER_DIR})
 include_directories(${FTDI_INC})
 
 include_directories(../inc)
-add_library (toplayer ftdi_i2c.c)
-
+add_library (toplayer SHARED ftdi_i2c.c)
+target_link_libraries(toplayer)
